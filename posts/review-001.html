@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>야, 그 엘든링 v1.07 패치? 그거 완전 사기였잖아. 컷된 보스들 마저 비웃을 짓이지 😬</title>
+  <link rel="canonical" href="https://t3b05-ss-karaoke-real2.pages.dev/posts/review-001.html">
+  <style>
+    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+    p { margin: 0 0 1em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 목록으로 돌아가기</a>
+  </header>
+  <main>
+    <h1>야, 그 엘든링 v1.07 패치? 그거 완전 사기였잖아. 컷된 보스들 마저 비웃을 짓이지 😬</h1>
+    <article>
+      <p><img src="../assets/interior__hero__t3b04-gh-club-look-1__1344x768__893567ef077a180b.png" alt="엘든링 데이터마이닝으로 발견된 미사용 보스 '고드윈의 후예'의 흉측한 모습, 스피드런 중단 패치로 좌절하는 게이머의 심정을 대변" loading="lazy" width="1344" height="768"></p>
+<p>아, 진짜. 맨날 말하지만 `v1.07` 패치는 진짜 역대급 뻘짓이었다니까. 그놈의 `Fire Giant` 스킵 있잖아? 정확히는 `Mountaintops of the Giants` 진입하자마자 `Foot of the Forge` 쪽으로 `Torrent` 점프해서 `out of bounds` 진입 후, 특정 각도로 카메라 돌려서 `collision` 뚫고 `fog gate` 통과하는 그 `sequence break` 말이야. 그거 `14프레임` 안으로 `input` 넣어야 성공하던 건데, 패치 이후로 `invisible wall` 판정이랑 `load zone trigger` 조건이 바뀌어서 사실상 막혔지. 그 때 내 `PB` (Personal Best) 갱신 직전이었는데, 진짜 키보드 던질 뻔했다니까. 🤬</p>
+<p>### 고드윈의 후예: 저주받은 잔재</p>
+<p>솔직히 이 패치 때문에 멘탈 터져서 한동안 `param editor`만 뒤적거렸어. 그러다가 다시 보게 된 게 `datamined` 보스 파일들이었지. 다들 알겠지만 `Godwyn's Scion` 얘, `Deeproot Depths`에서 `root-like creature`로만 구현되어 있지만, 초기 기획에는 제대로 된 보스전이 있었다는 거? 파일명 `m10_20_00_00_00_Boss` 쪽에 `Godwyn_Scion_Phase2` 같은 게 남아있더라고. 실제 패턴은 `Corruption Breath`와 촉수 휘두르기가 주를 이뤘는데, 특히 `AoE curse buildup`는 미친 수준이었어. 얘를 컷한 이유? 보통 "스케일 문제"라고들 하는데, 내 생각엔 `storyline divergence` 때문이었을 걸. `Ranni` 루트나 `Fia` 루트에 따라 `Godwyn`의 운명이 너무 크게 달라져서, 특정 시점에만 등장하는 보스로 넣기엔 `event flag` 관리가 복잡했을 거야. 어설프게 넣었다간 `lore inconsistency` 터지는 것보단 아예 빼버리는 게 나았겠지.</p>
+<p>### 미완의 공포: 버려진 짐승들과 그림자</p>
+<p>그리고 `Forbidden Lands` 근처에서 발견된 `Unused Beastman of Farum Azula` 변종도 있었어. 일반 몹이랑은 다르게 `unique weapon art`랑 `combo chain`이 있었는데, 특히 `jump attack` 이후 `slam` 연계가 예술이었지. 얘도 `m20_10_00_00_00` 쪽 `enemy param`에서 흔적을 찾을 수 있는데, 아마 `Farum Azula` 지역 확장이나 `mini-boss`로 기획됐다가 빠진 것 같아. 개인적으로는 `Malenia` 초기 `build`에서 `Waterfowl Dance`가 지금처럼 `OP`가 아니었을 때, `pre-nerf` 버전도 데이터에 남아있던 거 봤는데, 그거랑 비교하면 이 `Beastman`은 훨씬 더 `fair`한 난이도였을 거라고. 😮‍💨</p>
+<p>### 진짜 문제는 따로 있었다니까</p>
+<p>이런 컷된 보스들 패턴 구경하면서 느낀 건데, 얘네들 다 살려서 넣었어도 `Fire Giant` 스킵 막은 것보단 덜 빡쳤을 거야. `FromSoftware` 얘네들, 진짜 `balance patch` 한답시고 `community-discovered skips`를 막는 데만 혈안이 되어있는 게 문제라니까. 유저들이 시간 갈아 넣어서 찾은 `sequence break`는 그냥 `intended feature`로 인정해주거나, 아니면 더 창의적인 `bypass route`를 만들 기회를 줘야지, 무작정 `hotfix` 때려 박는 건 좀 아니지 않냐? 😤 이 미친 프레임 싸움 하다가 현타 오면, 진짜 상수 가라오케 찐후기 찾아보면서 '이런 데 가서 스트레스나 풀까' 싶어진다니까. 근데 또 막상 가면 이 똥겜 생각밖에 안 나고, 결국 집 와서 다시 `patch notes` 들여다보고 있는 나를 발견하곤 하지. 하… 이놈의 `Tarnished` 인생.</p>
+
+    <div class="juice-ref-dahn8c" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
+      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+      <li>심층 정보와 실제 데이터는 <a href="https://mens-esthe.space">shinjuku-mens</a>를 참고하세요.</li>
+      <li>자세한 기술 명세 가이드는 <a href="https://support.google.com/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
+      </ul>
+    </div>
+    </article>
+  </main>
+</body>
+</html>
