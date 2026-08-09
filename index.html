@@ -1,516 +1,514 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="custom-cms-7a3f">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-ledger-cool">
-    <title>상수 가라오케 찐후기 — 처음 방문자를 위한 조건별 선택 안내</title>
-    <meta name="description" content="상수 가라오케 찐후기. 눈으로 확인 가능한 것과 물어봐야 아는 것을 분리한다. 인원·목적·시간대별로 판단 기준이 달라지는 이유를 항목으로 제시한다. 급하게 결정해야 하는 독자를 위한 안내.">
-    <meta name="keywords" content="상수 가라오케, 상수 가라오케 찐후기, 상수 노래방, 상수역 가라오케, 상수동 가라오케">
-    <link rel="canonical" href="https://sangsu-song-choice.link-hub.org/">
-    <meta property="og:title" content="상수 가라오케 찐후기 — 처음 방문자를 위한 조건별 선택 안내">
-    <meta property="og:description" content="상수 가라오케 찐후기. 눈으로 확인 가능한 것과 물어봐야 아는 것을 분리한다. 인원·목적·시간대별로 판단 기준이 달라지는 이유를 항목으로 제시한다. 급하게 결정해야 하는 독자를 위한 안내.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sangsu-song-choice.link-hub.org/">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="상수 가라오케 찐후기 — 처음 방문자를 위한 조건별 선택 안내">
-    <meta name="twitter:description" content="상수 가라오케 찐후기. 즉시 확인 가능한 것들 기준. 급하게 결정해야 하는 독자용 안내.">
-    <style>
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'IBM Plex Mono', 'Courier New', monospace, system-ui, sans-serif;
-            background-color: #fafaf7;
-            color: #111827;
-            line-height: 1.6;
-            border-top: 3px solid #000;
-            border-bottom: 3px solid #000;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            transition: all 0.1s ease;
-        }
-        body[data-theme="charcoal"] {
-            background-color: #fafaf7;
-        }
-        body[data-build="a3b7c9d1"] {
-            letter-spacing: 0.01em;
-        }
-        .m-hero-gqix {
-            width: 100%;
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 0 24px;
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-        }
-        .k-nav-upjy {
-            width: 100%;
-            border-bottom: 3px solid #000;
-            padding: 24px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            flex-wrap: wrap;
-            gap: 16px;
-            position: relative;
-        }
-        .k-ico-dxhx {
-            font-family: 'Noto Serif KR', 'IBM Plex Mono', serif;
-            font-size: 2.2rem;
-            font-weight: 900;
-            letter-spacing: -0.03em;
-            line-height: 1.1;
-            text-transform: uppercase;
-            color: #111827;
-            text-decoration: none;
-            border-bottom: 3px solid #2563eb;
-            padding-bottom: 2px;
-        }
-        .x-ico-1bhm {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .x-ico-1bhm a {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: #111827;
-            text-decoration: none;
-            border: 2px solid #111827;
-            padding: 8px 16px;
-            transition: background-color 0.15s, color 0.15s;
-            border-radius: 0;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        .x-ico-1bhm a:hover {
-            background-color: #111827;
-            color: #fafaf7;
-        }
-        .t-list-y9zf {
-            display: none;
-            font-size: 1.8rem;
-            cursor: pointer;
-            background: none;
-            border: 3px solid #111827;
-            padding: 4px 12px;
-            line-height: 1;
-            color: #111827;
-            border-radius: 0;
-        }
-        .n-list-0lfj {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-            padding: 60px 0 40px;
-            border-bottom: 3px solid #000;
-        }
-        .n-list-0lfj-title {
-            font-family: 'Noto Serif KR', serif;
-            font-size: clamp(3.5rem, 10vw, 5.5rem);
-            font-weight: 900;
-            line-height: 1.1;
-            letter-spacing: -0.04em;
-            color: #111827;
-            text-transform: uppercase;
-            word-break: keep-all;
-        }
-        .n-list-0lfj-accent {
-            color: #2563eb;
-            text-decoration: underline;
-            text-decoration-thickness: 4px;
-            text-underline-offset: 8px;
-        }
-        .n-list-0lfj-sub {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 1rem;
-            border-left: 6px solid #111827;
-            padding-left: 20px;
-            max-width: 600px;
-            color: #1f2937;
-            font-weight: 400;
-            margin-top: 8px;
-        }
-        .t-card-vn22 {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-            padding: 40px 0;
-            border-bottom: 1px solid #d1d5db;
-        }
-        .t-card-vn22-title {
-            font-family: 'Noto Serif KR', serif;
-            font-size: 2.2rem;
-            font-weight: 900;
-            letter-spacing: -0.02em;
-            text-transform: uppercase;
-            border-bottom: 3px solid #2563eb;
-            padding-bottom: 8px;
-            display: inline-block;
-            color: #111827;
-        }
-        .v-top-b4s4-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
-            align-items: stretch;
-            width: 100%;
-        }
-        .v-top-b4s4-cell {
-            flex: 1 1 180px;
-            border: 2px solid #111827;
-            padding: 24px;
-            font-family: 'IBM Plex Mono', monospace;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background: #fafaf7;
-        }
-        .v-top-b4s4-number {
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: #111827;
-            line-height: 1.2;
-        }
-        .v-top-b4s4-label {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: #4b5563;
-            margin-top: 4px;
-        }
-        .q-ico-6sif-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-family: 'IBM Plex Mono', monospace;
-            margin: 16px 0;
-        }
-        .q-ico-6sif-table th {
-            border-top: 3px solid #111827;
-            border-bottom: 3px solid #111827;
-            padding: 16px 12px;
-            text-align: left;
-            font-weight: 700;
-            font-size: 1rem;
-            text-transform: uppercase;
-            background: #f3f4f6;
-        }
-        .q-ico-6sif-table td {
-            border-bottom: 1px solid #d1d5db;
-            padding: 16px 12px;
-            font-weight: 400;
-        }
-        .t-head-6v6a-stat {
-            border-left: 6px solid #2563eb;
-            padding: 16px 20px;
-            margin: 24px 0;
-            background: #ffffff;
-            font-family: 'IBM Plex Mono', monospace;
-            font-weight: 500;
-        }
-        .n-main-5s4i {
-            display: flex;
-            flex-direction: column;
-            gap: 28px;
-        }
-        .n-main-5s4i h2 {
-            font-family: 'Noto Serif KR', serif;
-            font-size: 1.9rem;
-            font-weight: 900;
-            border-left: 8px solid #111827;
-            padding-left: 18px;
-            margin: 12px 0 8px;
-        }
-        .n-main-5s4i p {
-            font-size: 1rem;
-            line-height: 1.8;
-            margin-bottom: 12px;
-            font-weight: 400;
-            color: #1f2937;
-        }
-        .t-side-93zj {
-            list-style: none;
-            padding: 0;
-        }
-        .t-side-93zj li {
-            border: 2px solid #111827;
-            padding: 16px 20px;
-            margin-bottom: 12px;
-            font-weight: 500;
-            background: #ffffff;
-        }
-        .t-side-93zj li::before {
-            content: "▹ ";
-            color: #2563eb;
-            font-weight: 700;
-        }
-        .x-foot-fb70-item {
-            border: 2px solid #111827;
-            padding: 20px;
-            margin-bottom: 16px;
-        }
-        .x-foot-fb70-question {
-            font-family: 'Noto Serif KR', serif;
-            font-weight: 900;
-            font-size: 1.3rem;
-            margin-bottom: 8px;
-            color: #111827;
-        }
-        .x-foot-fb70-answer {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.95rem;
-            color: #1f2937;
-        }
-        .x-img-li5k-bio {
-            border: 3px solid #111827;
-            padding: 24px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            font-family: 'IBM Plex Mono', monospace;
-            background: #ffffff;
-            margin: 24px 0;
-        }
-        .x-img-li5k-name {
-            font-weight: 900;
-            font-size: 1.2rem;
-            color: #111827;
-        }
-        .r-main-alfv {
-            padding: 40px 0;
-            margin-top: 40px;
-            border-top: 3px solid #111827;
-            text-align: left;
-            font-size: 0.9rem;
-            color: #4b5563;
-        }
-        .t-main-8vvm {
-            font-family: 'IBM Plex Mono', monospace;
-            border: 3px solid #111827;
-            background: #ffffff;
-            padding: 12px 28px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            cursor: pointer;
-            transition: all 0.15s;
-            display: inline-block;
-            border-radius: 0;
-            color: #111827;
-        }
-        .t-main-8vvm:hover {
-            background: #111827;
-            color: #fafaf7;
-        }
-        .q-hero-7x4r-right {
-            border-left: 3px solid #111827;
-            padding: 20px;
-            background: #ffffff;
-            margin-top: 24px;
-        }
-        @media (max-width: 768px) {
-            .x-ico-1bhm {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                gap: 12px;
-                margin-top: 16px;
-            }
-            .x-ico-1bhm.active {
-                display: flex;
-            }
-            .t-list-y9zf {
-                display: block;
-            }
-            .k-nav-upjy {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .n-list-0lfj-title {
-                font-size: 2.8rem;
-            }
-            .v-top-b4s4-row {
-                flex-direction: column;
-            }
-            .container {
-                padding: 0 16px;
-            }
-            section {
-                padding: 60px 0;
-            }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="generator" content="custom-cms-7a3f">
+ <title>상수 가라오케 찐후기 — 처음 방문자를 위한 조건별 선택 안내</title>
+ <meta name="description" content="상수 가라오케 찐후기. 눈으로 확인 가능한 것과 물어봐야 아는 것을 분리한다. 인원·목적·시간대별로 판단 기준이 달라지는 이유를 항목으로 제시한다. 급하게 결정해야 하는 독자를 위한 안내.">
+ <meta name="keywords" content="상수 가라오케, 상수 가라오케 찐후기, 상수 노래방, 상수역 가라오케, 상수동 가라오케">
+ <link rel="canonical" href="https://sangsu-song-choice.link-hub.org/">
+ <meta property="og:title" content="상수 가라오케 찐후기 — 처음 방문자를 위한 조건별 선택 안내">
+ <meta property="og:description" content="상수 가라오케 찐후기. 눈으로 확인 가능한 것과 물어봐야 아는 것을 분리한다. 인원·목적·시간대별로 판단 기준이 달라지는 이유를 항목으로 제시한다. 급하게 결정해야 하는 독자를 위한 안내.">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://sangsu-song-choice.link-hub.org/">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="상수 가라오케 찐후기 — 처음 방문자를 위한 조건별 선택 안내">
+ <meta name="twitter:description" content="상수 가라오케 찐후기. 즉시 확인 가능한 것들 기준. 급하게 결정해야 하는 독자용 안내.">
+ <style>
+ *, *::before, *::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+ html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: 'IBM Plex Mono', 'Courier New', monospace, system-ui, sans-serif;
+ background-color: #fafaf7;
+ color: #111827;
+ line-height: 1.6;
+ border-top: 3px solid #000;
+ border-bottom: 3px solid #000;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ transition: all 0.1s ease;
+ }
+ body[data-theme="charcoal"] {
+ background-color: #fafaf7;
+ }
+ body[data-build="a3b7c9d1"] {
+ letter-spacing: 0.01em;
+ }
+ .m-hero-gqix {
+ width: 100%;
+ max-width: 960px;
+ margin: 0 auto;
+ padding: 0 24px;
+ display: flex;
+ flex-direction: column;
+ gap: 40px;
+ }
+ .k-nav-upjy {
+ width: 100%;
+ border-bottom: 3px solid #000;
+ padding: 24px 0;
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-end;
+ flex-wrap: wrap;
+ gap: 16px;
+ position: relative;
+ }
+ .k-ico-dxhx {
+ font-family: 'Noto Serif KR', 'IBM Plex Mono', serif;
+ font-size: 2.2rem;
+ font-weight: 900;
+ letter-spacing: -0.03em;
+ line-height: 1.1;
+ text-transform: uppercase;
+ color: #111827;
+ text-decoration: none;
+ border-bottom: 3px solid #2563eb;
+ padding-bottom: 2px;
+ }
+ .x-ico-1bhm {
+ display: flex;
+ gap: 20px;
+ align-items: center;
+ flex-wrap: wrap;
+ }
+ .x-ico-1bhm a {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 0.9rem;
+ font-weight: 500;
+ color: #111827;
+ text-decoration: none;
+ border: 2px solid #111827;
+ padding: 8px 16px;
+ transition: background-color 0.15s, color 0.15s;
+ border-radius: 0;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ }
+ .x-ico-1bhm a:hover {
+ background-color: #111827;
+ color: #fafaf7;
+ }
+ .t-list-y9zf {
+ display: none;
+ font-size: 1.8rem;
+ cursor: pointer;
+ background: none;
+ border: 3px solid #111827;
+ padding: 4px 12px;
+ line-height: 1;
+ color: #111827;
+ border-radius: 0;
+ }
+ .n-list-0lfj {
+ display: flex;
+ flex-direction: column;
+ gap: 24px;
+ padding: 60px 0 40px;
+ border-bottom: 3px solid #000;
+ }
+ .n-list-0lfj-title {
+ font-family: 'Noto Serif KR', serif;
+ font-size: clamp(3.5rem, 10vw, 5.5rem);
+ font-weight: 900;
+ line-height: 1.1;
+ letter-spacing: -0.04em;
+ color: #111827;
+ text-transform: uppercase;
+ word-break: keep-all;
+ }
+ .n-list-0lfj-accent {
+ color: #2563eb;
+ text-decoration: underline;
+ text-decoration-thickness: 4px;
+ text-underline-offset: 8px;
+ }
+ .n-list-0lfj-sub {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 1rem;
+ border-left: 6px solid #111827;
+ padding-left: 20px;
+ max-width: 600px;
+ color: #1f2937;
+ font-weight: 400;
+ margin-top: 8px;
+ }
+ .t-card-vn22 {
+ display: flex;
+ flex-direction: column;
+ gap: 24px;
+ padding: 40px 0;
+ border-bottom: 1px solid #d1d5db;
+ }
+ .t-card-vn22-title {
+ font-family: 'Noto Serif KR', serif;
+ font-size: 2.2rem;
+ font-weight: 900;
+ letter-spacing: -0.02em;
+ text-transform: uppercase;
+ border-bottom: 3px solid #2563eb;
+ padding-bottom: 8px;
+ display: inline-block;
+ color: #111827;
+ }
+ .v-top-b4s4-row {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 16px;
+ align-items: stretch;
+ width: 100%;
+ }
+ .v-top-b4s4-cell {
+ flex: 1 1 180px;
+ border: 2px solid #111827;
+ padding: 24px;
+ font-family: 'IBM Plex Mono', monospace;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ background: #fafaf7;
+ }
+ .v-top-b4s4-number {
+ font-size: 2.2rem;
+ font-weight: 700;
+ color: #111827;
+ line-height: 1.2;
+ }
+ .v-top-b4s4-label {
+ font-size: 0.8rem;
+ text-transform: uppercase;
+ letter-spacing: 0.08em;
+ color: #4b5563;
+ margin-top: 4px;
+ }
+ .q-ico-6sif-table {
+ width: 100%;
+ border-collapse: collapse;
+ font-family: 'IBM Plex Mono', monospace;
+ margin: 16px 0;
+ }
+ .q-ico-6sif-table th {
+ border-top: 3px solid #111827;
+ border-bottom: 3px solid #111827;
+ padding: 16px 12px;
+ text-align: left;
+ font-weight: 700;
+ font-size: 1rem;
+ text-transform: uppercase;
+ background: #f3f4f6;
+ }
+ .q-ico-6sif-table td {
+ border-bottom: 1px solid #d1d5db;
+ padding: 16px 12px;
+ font-weight: 400;
+ }
+ .t-head-6v6a-stat {
+ border-left: 6px solid #2563eb;
+ padding: 16px 20px;
+ margin: 24px 0;
+ background: #ffffff;
+ font-family: 'IBM Plex Mono', monospace;
+ font-weight: 500;
+ }
+ .n-main-5s4i {
+ display: flex;
+ flex-direction: column;
+ gap: 28px;
+ }
+ .n-main-5s4i h2 {
+ font-family: 'Noto Serif KR', serif;
+ font-size: 1.9rem;
+ font-weight: 900;
+ border-left: 8px solid #111827;
+ padding-left: 18px;
+ margin: 12px 0 8px;
+ }
+ .n-main-5s4i p {
+ font-size: 1rem;
+ line-height: 1.8;
+ margin-bottom: 12px;
+ font-weight: 400;
+ color: #1f2937;
+ }
+ .t-side-93zj {
+ list-style: none;
+ padding: 0;
+ }
+ .t-side-93zj li {
+ border: 2px solid #111827;
+ padding: 16px 20px;
+ margin-bottom: 12px;
+ font-weight: 500;
+ background: #ffffff;
+ }
+ .t-side-93zj li::before {
+ content: "▹ ";
+ color: #2563eb;
+ font-weight: 700;
+ }
+ .x-foot-fb70-item {
+ border: 2px solid #111827;
+ padding: 20px;
+ margin-bottom: 16px;
+ }
+ .x-foot-fb70-question {
+ font-family: 'Noto Serif KR', serif;
+ font-weight: 900;
+ font-size: 1.3rem;
+ margin-bottom: 8px;
+ color: #111827;
+ }
+ .x-foot-fb70-answer {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 0.95rem;
+ color: #1f2937;
+ }
+ .x-img-li5k-bio {
+ border: 3px solid #111827;
+ padding: 24px;
+ display: flex;
+ flex-direction: column;
+ gap: 12px;
+ font-family: 'IBM Plex Mono', monospace;
+ background: #ffffff;
+ margin: 24px 0;
+ }
+ .x-img-li5k-name {
+ font-weight: 900;
+ font-size: 1.2rem;
+ color: #111827;
+ }
+ .r-main-alfv {
+ padding: 40px 0;
+ margin-top: 40px;
+ border-top: 3px solid #111827;
+ text-align: left;
+ font-size: 0.9rem;
+ color: #4b5563;
+ }
+ .t-main-8vvm {
+ font-family: 'IBM Plex Mono', monospace;
+ border: 3px solid #111827;
+ background: #ffffff;
+ padding: 12px 28px;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ cursor: pointer;
+ transition: all 0.15s;
+ display: inline-block;
+ border-radius: 0;
+ color: #111827;
+ }
+ .t-main-8vvm:hover {
+ background: #111827;
+ color: #fafaf7;
+ }
+ .q-hero-7x4r-right {
+ border-left: 3px solid #111827;
+ padding: 20px;
+ background: #ffffff;
+ margin-top: 24px;
+ }
+ @media (max-width: 768px) {
+ .x-ico-1bhm {
+ display: none;
+ flex-direction: column;
+ width: 100%;
+ gap: 12px;
+ margin-top: 16px;
+ }
+ .x-ico-1bhm.active {
+ display: flex;
+ }
+ .t-list-y9zf {
+ display: block;
+ }
+ .k-nav-upjy {
+ flex-direction: column;
+ align-items: flex-start;
+ }
+ .n-list-0lfj-title {
+ font-size: 2.8rem;
+ }
+ .v-top-b4s4-row {
+ flex-direction: column;
+ }
+ .container {
+ padding: 0 16px;
+ }
+ section {
+ padding: 60px 0;
+ }
+ }
+ </style>
 </head>
 <body data-theme="charcoal" data-build="f4a1b2c3">
-    <div class="m-hero-gqix">
-        <header class="k-nav-upjy" data-v="3e7a1d">
-            <a href="/" class="k-ico-dxhx">상수 가라오케 찐후기</a>
-            <button class="t-list-y9zf" id="hamburger">☰</button>
-            <nav class="x-ico-1bhm" id="navMenu">
-                <a href="#criteria">판단 기준</a>
-                <a href="#table">조건표</a>
-                <a href="#verify">확인 항목</a>
-                <a href="#faq">FAQ</a>
-            </nav>
-        </header>
-        <main>
-            <section class="n-list-0lfj" data-v="b9d2e3">
-                <h1 class="n-list-0lfj-title">
-                    원하는 건 <span class="n-list-0lfj-accent">찐</span>인가,<br>빠른 결정인가
-                </h1>
-                <div class="n-list-0lfj-sub">
-                    상수 가라오케 찐후기. 판단 기준은 목적에 따라 달라진다. 확인 가능한 것만 나열한다.
-                </div>
-            </section>
+ <div class="m-hero-gqix">
+ <header class="k-nav-upjy" data-v="3e7a1d">
+ <a href="/" class="k-ico-dxhx">상수 가라오케 찐후기</a>
+ <button class="t-list-y9zf" id="hamburger">☰</button>
+ <nav class="x-ico-1bhm" id="navMenu">
+ <a href="#criteria">판단 기준</a>
+ <a href="#table">조건표</a>
+ <a href="#verify">확인 항목</a>
+ <a href="#faq">FAQ</a>
+ </nav>
+ </header>
+ <main>
+ <section class="n-list-0lfj" data-v="b9d2e3">
+ <h1 class="n-list-0lfj-title">
+ 원하는 건 <span class="n-list-0lfj-accent">찐</span>인가,<br>빠른 결정인가
+ </h1>
+ <div class="n-list-0lfj-sub">
+ 상수 가라오케 찐후기. 판단 기준은 목적에 따라 달라진다. 확인 가능한 것만 나열한다.
+ </div>
+ </section>
 
-            <article class="n-main-5s4i" data-v="c3f4a2">
-                <section class="t-card-vn22" id="criteria" data-v="d8e1b5">
-                    <h2 class="t-card-vn22-title">01 | 무엇을 먼저 볼 것인가</h2>
-                    <p>상수 가라오케 찐후기를 찾는 이유는 간단하다. 시간이 없다. 그리고 되는지 안 되는지를 빨리 알아야 한다. 인원, 목적, 시간대 이 세 가지가 우선이다. 이걸 먼저 정리하지 않으면 어떤 후기도 의미가 없다.</p>
-                    <p>눈으로 확인 가능한 것과 물어봐야 아는 것을 구분한다. 방 상태, 음향 기기, 곡 목록은 직접 볼 수 있다. 예약 가능 시간, 추가 요금, 특정 곡 포함 여부는 확인해야 한다. 기준이 없을 때 문제가 생긴다.</p>
-                    <div class="t-head-6v6a">
-                        ⚡ 즉시 확인 가능: 공간 크기 · 모니터 수 · 마이크 상태<br>
-                        ❓ 문의 필수: 프라임 타임 예약 · 인원 추가 요금
-                    </div>
-                </section>
+ <article class="n-main-5s4i" data-v="c3f4a2">
+ <section class="t-card-vn22" id="criteria" data-v="d8e1b5">
+ <h2 class="t-card-vn22-title">01 | 무엇을 먼저 볼 것인가</h2>
+ <p>상수 가라오케 찐후기를 찾는 이유는 간단하다. 시간이 없다. 그리고 되는지 안 되는지를 빨리 알아야 한다. 인원, 목적, 시간대 이 세 가지가 우선이다. 이걸 먼저 정리하지 않으면 어떤 후기도 의미가 없다.</p>
+ <p>눈으로 확인 가능한 것과 물어봐야 아는 것을 구분한다. 방 상태, 음향 기기, 곡 목록은 직접 볼 수 있다. 예약 가능 시간, 추가 요금, 특정 곡 포함 여부는 확인해야 한다. 기준이 없을 때 문제가 생긴다.</p>
+ <div class="t-head-6v6a">
+ ⚡ 즉시 확인 가능: 공간 크기 · 모니터 수 · 마이크 상태<br>
+ ❓ 문의 필수: 프라임 타임 예약 · 인원 추가 요금
+ </div>
+ </section>
 
-                <section class="t-card-vn22" id="table" data-v="a9c0d2">
-                    <h2 class="t-card-vn22-title">조건별 적합성 분기</h2>
-                    <p>상수 가라오케 찐후기는 인원과 분위기에 따라 완전히 다른 선택지가 된다. 아래 표는 실제 방문 전 체크해야 할 변수를 정리한 것이다. 가격이 아닌 구조로 판단한다.</p>
-                    <table class="q-ico-6sif-table">
-                        <thead>
-                            <tr><th>인원</th><th>주목적</th><th>확인 항목</th><th>우선순위</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>2~3명</td><td>연습/소규모</td><td>룸 사이즈, 최소 요금</td><td>공간 효율</td></tr>
-                            <tr><td>4~6명</td><td>모임/회식</td><td>곡 업데이트, 좌석 수</td><td>편의성</td></tr>
-                            <tr><td>7명 이상</td><td>파티/이벤트</td><td>대관 가능 여부, 음향</td><td>용량</td></tr>
-                        </tbody>
-                    </table>
-                    <p>기준이 없을 때 생기는 문제는 명확하다. 방은 넓은데 스피커가 약하거나, 곡은 많지만 검색이 불편한 경우다. 상수 가라오케 찐후기에서는 이런 항목을 먼저 본다.</p>
-                </section>
+ <section class="t-card-vn22" id="table" data-v="a9c0d2">
+ <h2 class="t-card-vn22-title">조건별 적합성 분기</h2>
+ <p>상수 가라오케 찐후기는 인원과 분위기에 따라 완전히 다른 선택지가 된다. 아래 표는 실제 방문 전 체크해야 할 변수를 정리한 것이다. 가격이 아닌 구조로 판단한다.</p>
+ <table class="q-ico-6sif-table">
+ <thead>
+ <tr><th>인원</th><th>주목적</th><th>확인 항목</th><th>우선순위</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>2~3명</td><td>연습/소규모</td><td>룸 사이즈, 최소 요금</td><td>공간 효율</td></tr>
+ <tr><td>4~6명</td><td>모임/회식</td><td>곡 업데이트, 좌석 수</td><td>편의성</td></tr>
+ <tr><td>7명 이상</td><td>파티/이벤트</td><td>대관 가능 여부, 음향</td><td>용량</td></tr>
+ </tbody>
+ </table>
+ <p>기준이 없을 때 생기는 문제는 명확하다. 방은 넓은데 스피커가 약하거나, 곡은 많지만 검색이 불편한 경우다. 상수 가라오케 찐후기에서는 이런 항목을 먼저 본다.</p>
+ </section>
 
-                <section class="t-card-vn22" id="verify" data-v="f1a4b7">
-                    <h2 class="t-card-vn22-title">눈으로 확인 가능한 것</h2>
-                    <div class="v-top-b4s4-row">
-                        <div class="v-top-b4s4-cell">
-                            <span class="v-top-b4s4-number">01</span>
-                            <span class="v-top-b4s4-label">공간 크기</span>
-                        </div>
-                        <div class="v-top-b4s4-cell">
-                            <span class="v-top-b4s4-number">02</span>
-                            <span class="v-top-b4s4-label">마이크 상태</span>
-                        </div>
-                        <div class="v-top-b4s4-cell">
-                            <span class="v-top-b4s4-number">03</span>
-                            <span class="v-top-b4s4-label">곡명 검색</span>
-                        </div>
-                        <div class="v-top-b4s4-cell">
-                            <span class="v-top-b4s4-number">04</span>
-                            <span class="v-top-b4s4-label">좌석 배치</span>
-                        </div>
-                    </div>
-                    <p>이 항목들은 방문 전 사진이나 실내 영상으로 검증할 수 있다. 상수 지역 가라오케 후기에서 가장 자주 언급되는 요소다. 좌석이 벽에 붙어 있는지, 마이크는 무선인지 유선인지 확인한다.</p>
-                    <p>물어봐야 할 것은 따로 있다. 예약 시 특정 시간대에만 적용되는 규칙, 인원 추가 요금 발생 여부 등이다. 이것을 모르고 방문하면 기대와 다른 결과가 나온다.</p>
-                </section>
+ <section class="t-card-vn22" id="verify" data-v="f1a4b7">
+ <h2 class="t-card-vn22-title">눈으로 확인 가능한 것</h2>
+ <div class="v-top-b4s4-row">
+ <div class="v-top-b4s4-cell">
+ <span class="v-top-b4s4-number">01</span>
+ <span class="v-top-b4s4-label">공간 크기</span>
+ </div>
+ <div class="v-top-b4s4-cell">
+ <span class="v-top-b4s4-number">02</span>
+ <span class="v-top-b4s4-label">마이크 상태</span>
+ </div>
+ <div class="v-top-b4s4-cell">
+ <span class="v-top-b4s4-number">03</span>
+ <span class="v-top-b4s4-label">곡명 검색</span>
+ </div>
+ <div class="v-top-b4s4-cell">
+ <span class="v-top-b4s4-number">04</span>
+ <span class="v-top-b4s4-label">좌석 배치</span>
+ </div>
+ </div>
+ <p>이 항목들은 방문 전 사진이나 실내 영상으로 검증할 수 있다. 상수 지역 가라오케 후기에서 가장 자주 언급되는 요소다. 좌석이 벽에 붙어 있는지, 마이크는 무선인지 유선인지 확인한다.</p>
+ <p>물어봐야 할 것은 따로 있다. 예약 시 특정 시간대에만 적용되는 규칙, 인원 추가 요금 발생 여부 등이다. 이것을 모르고 방문하면 기대와 다른 결과가 나온다.</p>
+ </section>
 
-                <section class="t-card-vn22" id="faq" data-v="e2b3c4">
-                    <h2 class="t-card-vn22-title">자주 묻는 질문</h2>
-                    <div class="x-foot-fb70-item">
-                        <div class="x-foot-fb70-question">상수 가라오케 찐후기에서 가장 중요한 항목은 무엇인가요?</div>
-                        <div class="x-foot-fb70-answer">긴하게 결정해야 하는 독자라면 인원과 목적에 따라 달라지는 방 크기와 음향 상태를 먼저 보십시오. 후기에서 사진으로 확인 가능한 부분만 신뢰하는 것이 좋습니다.</div>
-                    </div>
-                    <div class="x-foot-fb70-item">
-                        <div class="x-foot-fb70-question">프라임 타임 예약 없이 방문해도 되나요?</div>
-                        <div class="x-foot-fb70-answer">목요일과 금요일 밤은 현장 접수가 제한될 수 있습니다. 반드시 전화나 메시지로 확인하십시오. 상수 지역은 유동 인구가 많아 대기 시간이 길어질 수 있습니다.</div>
-                    </div>
-                    <div class="x-foot-fb70-item">
-                        <div class="x-foot-fb70-question">곡 목록은 어디서 미리 볼 수 있나요?</div>
-                        <div class="x-foot-fb70-answer">매장에 따라 실시간 업데이트되는 곡명 검색 화면을 찍은 후기를 참고하세요. 최신 곡이 없거나 특정 장르가 부족할 수 있으므로 문의가 필요합니다.</div>
-                    </div>
-                </section>
+ <section class="t-card-vn22" id="faq" data-v="e2b3c4">
+ <h2 class="t-card-vn22-title">자주 묻는 질문</h2>
+ <div class="x-foot-fb70-item">
+ <div class="x-foot-fb70-question">상수 가라오케 찐후기에서 가장 중요한 항목은 무엇인가요?</div>
+ <div class="x-foot-fb70-answer">긴하게 결정해야 하는 독자라면 인원과 목적에 따라 달라지는 방 크기와 음향 상태를 먼저 보십시오. 후기에서 사진으로 확인 가능한 부분만 신뢰하는 것이 좋습니다.</div>
+ </div>
+ <div class="x-foot-fb70-item">
+ <div class="x-foot-fb70-question">프라임 타임 예약 없이 방문해도 되나요?</div>
+ <div class="x-foot-fb70-answer">목요일과 금요일 밤은 현장 접수가 제한될 수 있습니다. 반드시 전화나 메시지로 확인하십시오. 상수 지역은 유동 인구가 많아 대기 시간이 길어질 수 있습니다.</div>
+ </div>
+ <div class="x-foot-fb70-item">
+ <div class="x-foot-fb70-question">곡 목록은 어디서 미리 볼 수 있나요?</div>
+ <div class="x-foot-fb70-answer">매장에 따라 실시간 업데이트되는 곡명 검색 화면을 찍은 후기를 참고하세요. 최신 곡이 없거나 특정 장르가 부족할 수 있으므로 문의가 필요합니다.</div>
+ </div>
+ </section>
 
-                <aside class="x-img-li5k-bio" data-v="d7f9c1">
-                    <div class="x-img-li5k-name">로컬 가이드 나루</div>
-                    <p>홍대·상수 지역 정보를 5년간 정리해온 로컬 가이드입니다. 구조와 콘텐츠를 드러내는 방식으로 공간 리뷰를 작성합니다. 판단 기준을 항목화하여 기록합니다.</p>
-                </aside>
-            </article>
-        </main>
+ <aside class="x-img-li5k-bio" data-v="d7f9c1">
+ <div class="x-img-li5k-name">로컬 가이드 나루</div>
+ <p>홍대·상수 지역 정보를 5년간 정리해온 로컬 가이드입니다. 구조와 콘텐츠를 드러내는 방식으로 공간 리뷰를 작성합니다. 판단 기준을 항목화하여 기록합니다.</p>
+ </aside>
+ </article>
+ </main>
 
-        <footer class="r-main-alfv" data-v="a0b1c2">
-            <p>© 2025 상수 가라오케 찐후기 — sangsu-song-choice.link-hub.org</p>
-        </footer>
-    </div>
+ <footer class="r-main-alfv" data-v="a0b1c2">
+ <p>© 2025 상수 가라오케 찐후기 — sangsu-song-choice.link-hub.org</p>
+ </footer>
+ </div>
 
-    <script>
-        document.getElementById('hamburger').addEventListener('click', function() {
-            document.getElementById('navMenu').classList.toggle('active');
-        });
-    </script>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "상수 가라오케 찐후기",
-            "url": "https://sangsu-song-choice.link-hub.org/",
-            "author": {
-                "@type": "Person",
-                "name": "로컬 가이드 나루"
-            }
-        }
-    </script>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
-                "@type": "Question",
-                "name": "상수 가라오케 찐후기에서 가장 중요한 항목은 무엇인가요?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "급하게 결정해야 하는 독자라면 인원과 목적에 따라 방 크기와 음향 상태를 먼저 확인하세요."
-                }
-            }, {
-                "@type": "Question",
-                "name": "프라임 타임 예약 없이 방문 가능한가요?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "목요일과 금요일 밤은 제한될 수 있으므로 전화로 확인이 필요합니다."
-                }
-            }, {
-                "@type": "Question",
-                "name": "곡 목록은 어디서 볼 수 있나요?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "매장 내 실시간 곡 검색 화면을 찍은 후기를 참고하거나 문의하세요."
-                }
-            }]
-        }
-    </script>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "홈",
-                "item": "https://sangsu-song-choice.link-hub.org/"
-            }]
-        }
-    </script>
+ <script>
+ document.getElementById('hamburger').addEventListener('click', function() {
+ document.getElementById('navMenu').classList.toggle('active');
+ });
+ </script>
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "Organization",
+ "name": "상수 가라오케 찐후기",
+ "url": "https://sangsu-song-choice.link-hub.org/",
+ "author": {
+ "@type": "Person",
+ "name": "로컬 가이드 나루"
+ }
+ }
+ </script>
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [{
+ "@type": "Question",
+ "name": "상수 가라오케 찐후기에서 가장 중요한 항목은 무엇인가요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "급하게 결정해야 하는 독자라면 인원과 목적에 따라 방 크기와 음향 상태를 먼저 확인하세요."
+ }
+ }, {
+ "@type": "Question",
+ "name": "프라임 타임 예약 없이 방문 가능한가요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "목요일과 금요일 밤은 제한될 수 있으므로 전화로 확인이 필요합니다."
+ }
+ }, {
+ "@type": "Question",
+ "name": "곡 목록은 어디서 볼 수 있나요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "매장 내 실시간 곡 검색 화면을 찍은 후기를 참고하거나 문의하세요."
+ }
+ }]
+ }
+ </script>
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [{
+ "@type": "ListItem",
+ "position": 1,
+ "name": "홈",
+ "item": "https://sangsu-song-choice.link-hub.org/"
+ }]
+ }
+ </script>
 </body>
 </html>
