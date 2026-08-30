@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>엘든 링 패치로 인한 문제점과 삭제된 보스</title>
-<meta name="description" content="아, 진짜. 맨날 말하지만 v1.07 패치는 진짜 역대급 뻘짓이었다니까. 그놈의 Fire Giant 스킵 있잖아?">
+  <title>상수 가라오케 첫 방문 조건별 선택 안내 정리</title>
+<meta name="description" content="상수역 일대는 주거지와 상업시설이 섞여 있어 가라오케 업소가 골목 안쪽까지 분포해 있다. 처음 방문하는 사람은 건물의 외관과 간판만으로 내부 분위기를 가늠하기 어려운데, 미리 조건을 정해두면 선택 범위를 크게 좁힐 수 있다.">
   <link rel="canonical" href="https://sangsu-song-choice.link-hub.org/posts/review-001.html">
   <style>
     body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
@@ -16,8 +16,8 @@
     a:hover { text-decoration: underline; }
   </style>
   <meta property="og:url" content="https://sangsu-song-choice.link-hub.org/posts/review-001.html">
-  <meta property="og:title" content="엘든 링 패치로 인한 문제점과 삭제된 보스">
-  <meta property="og:description" content="아, 진짜. 맨날 말하지만 v1.07 패치는 진짜 역대급 뻘짓이었다니까. 그놈의 Fire Giant 스킵 있잖아?">
+  <meta property="og:title" content="상수 가라오케 첫 방문 조건별 선택 안내 정리">
+  <meta property="og:description" content="상수역 일대는 주거지와 상업시설이 섞여 있어 가라오케 업소가 골목 안쪽까지 분포해 있다. 처음 방문하는 사람은 건물의 외관과 간판만으로 내부 분위기를 가늠하기 어려운데, 미리 조건을 정해두면 선택 범위를 크게 좁힐 수 있다.">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
@@ -26,26 +26,23 @@
     <a href="../index.html">← 목록으로 돌아가기</a>
   </header>
   <main>
-    <h1>엘든 링 패치로 인한 문제점과 삭제된 보스</h1>
-    <article>
-      <p><img src="../assets/interior__hero__t3b04-gh-club-look-1__1344x768__893567ef077a180b.webp" alt="엘든링 데이터마이닝으로 발견된 미사용 보스 '고드윈의 후예'의 흉측한 모습, 스피드런 중단 패치로 좌절하는 게이머의 심정을 대변" loading="lazy" width="1344" height="768"></p>
-<p>아, 진짜. 맨날 말하지만 <code>v1.07</code> 패치는 진짜 역대급 뻘짓이었다니까. 그놈의 <code>Fire Giant</code> 스킵 있잖아? 정확히는 <code>Mountaintops of the Giants</code> 진입하자마자 <code>Foot of the Forge</code> 쪽으로 <code>Torrent</code> 점프해서 <code>out of bounds</code> 진입 후, 특정 각도로 카메라 돌려서 <code>collision</code> 뚫고 <code>fog gate</code> 통과하는 그 <code>sequence break</code> 말이야. 그거 <code>14프레임</code> 안으로 <code>input</code> 넣어야 성공하던 건데, 패치 이후로 <code>invisible wall</code> 판정이랑 <code>load zone trigger</code> 조건이 바뀌어서 사실상 막혔지. 그 때 내 <code>PB</code> (Personal Best) 갱신 직전이었는데, 진짜 키보드 던질 뻔했다니까. 🤬</p>
-<h3>고드윈의 후예: 저주받은 잔재</h3>
-<p>솔직히 이 패치 때문에 멘탈 터져서 한동안 <code>param editor</code>만 뒤적거렸어. 그러다가 다시 보게 된 게 <code>datamined</code> 보스 파일들이었지. 다들 알겠지만 <code>Godwyn's Scion</code> 얘, <code>Deeproot Depths</code>에서 <code>root-like creature</code>로만 구현되어 있지만, 초기 기획에는 제대로 된 보스전이 있었다는 거? 파일명 <code>m10_20_00_00_00_Boss</code> 쪽에 <code>Godwyn_Scion_Phase2</code> 같은 게 남아있더라고. 실제 패턴은 <code>Corruption Breath</code>와 촉수 휘두르기가 주를 이뤘는데, 특히 <code>AoE curse buildup</code>는 미친 수준이었어. 얘를 컷한 이유? 보통 "스케일 문제"라고들 하는데, 내 생각엔 <code>storyline divergence</code> 때문이었을 걸. <code>Ranni</code> 루트나 <code>Fia</code> 루트에 따라 <code>Godwyn</code>의 운명이 너무 크게 달라져서, 특정 시점에만 등장하는 보스로 넣기엔 <code>event flag</code> 관리가 복잡했을 거야. 어설프게 넣었다간 <code>lore inconsistency</code> 터지는 것보단 아예 빼버리는 게 나았겠지.</p>
-<h3>미완의 공포: 버려진 짐승들과 그림자</h3>
-<p>그리고 <code>Forbidden Lands</code> 근처에서 발견된 <code>Unused Beastman of Farum Azula</code> 변종도 있었어. 일반 몹이랑은 다르게 <code>unique weapon art</code>랑 <code>combo chain</code>이 있었는데, 특히 <code>jump attack</code> 이후 <code>slam</code> 연계가 예술이었지. 얘도 <code>m20_10_00_00_00</code> 쪽 <code>enemy param</code>에서 흔적을 찾을 수 있는데, 아마 <code>Farum Azula</code> 지역 확장이나 <code>mini-boss</code>로 기획됐다가 빠진 것 같아. 개인적으로는 <code>Malenia</code> 초기 <code>build</code>에서 <code>Waterfowl Dance</code>가 지금처럼 <code>OP</code>가 아니었을 때, <code>pre-nerf</code> 버전도 데이터에 남아있던 거 봤는데, 그거랑 비교하면 이 <code>Beastman</code>은 훨씬 더 <code>fair</code>한 난이도였을 거라고. 😮‍💨</p>
-<h3>진짜 문제는 따로 있었다니까</h3>
-<p>이런 컷된 보스들 패턴 구경하면서 느낀 건데, 얘네들 다 살려서 넣었어도 <code>Fire Giant</code> 스킵 막은 것보단 덜 빡쳤을 거야. <code>FromSoftware</code> 얘네들, 진짜 <code>balance patch</code> 한답시고 <code>community-discovered skips</code>를 막는 데만 혈안이 되어있는 게 문제라니까. 유저들이 시간 갈아 넣어서 찾은 <code>sequence break</code>는 그냥 <code>intended feature</code>로 인정해주거나, 아니면 더 창의적인 <code>bypass route</code>를 만들 기회를 줘야지, 무작정 <code>hotfix</code> 때려 박는 건 좀 아니지 않냐? 😤 이 미친 프레임 싸움 하다가 현타 오면, 진짜 상수 가라오케 찐후기 찾아보면서 '이런 데 가서 스트레스나 풀까' 싶어진다니까. 근데 또 막상 가면 이 똥겜 생각밖에 안 나고, 결국 집 와서 다시 <code>patch notes</code> 들여다보고 있는 나를 발견하곤 하지. 하… 이놈의 <code>Tarnished</code> 인생.</p>
 
-    <div class="juice-ref-dahn8c" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
-      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
-      <ul style="list-style:none;padding:0;margin:0;">
-      <li>심층 정보와 실제 데이터는 <a href="https://mens-esthe.space">shinjuku-mens</a>를 참고하세요.</li>
-      <li>자세한 기술 명세 가이드는 <a href="https://support.google.com/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
-      </ul>
-    </div>
-    </article>
-      <nav class="post-pager" aria-label="글 이동">
+<h1>상수 가라오케 첫 방문 조건별 선택 안내 정리</h1>
+<article>
+<h2>상수역 근처에서 가라오케를 처음 찾는 사람들을 위한 안내</h2>
+<p>상수역 일대는 주거지와 상업시설이 섞여 있어 가라오케 업소가 골목 안쪽까지 분포해 있다. 처음 방문하는 사람은 건물의 외관과 간판만으로 내부 분위기를 가늠하기 어려운데, 미리 조건을 정해두면 선택 범위를 크게 좁힐 수 있다. 본문은 가격이나 전화번호 같은 확인되지 않은 수치는 다루지 않고, 선택 기준을 정리하는 데 초점을 둔다.</p>
+<h2>이용 목적에 따른 구분 기준</h2>
+<p>조용한 대화와 음료 위주의 공간을 원한다면 룸 간 소음 차단이 잘 되는지와 기본 조명 밝기를 살펴본다. 반대로 노래 자체를 즐기는 것이 목적이라면 최신 곡 수와 마이크 음질, 룸 크기 선택폭이 중요하다. 혼성 모임이라면 소수 인원실과 단체실이 함께 있는지, 시간대별 예약 가능 여부를 함께 확인하는 편이 실수를 줄인다.</p>
+<h2>시간대·인원·비용 구조를 미리 정해두는 방법</h2>
+<p>평일 저녁과 주말 저녁은 이용 패턴이 크게 달라진다. 학생·직장인 혼합 모임이라면 저녁 시작 시간대를 피하거나 미리 시간을 분산해 두는 것이 좋다. 비용은 인당 시간 단위로 가늠하되, 음료·안주 구성과 연장 단가가 함께 움직이는 경우가 많으므로 단순 시간당 금액 하나로 비교하지 않는 편이 정확하다.</p>
+<h2>운영 정보와 외부 자료 활용 시 유의점</h2>
+<p>업소 운영 정보는 변동되기 쉽다. 노래 곡 수, 룸 구성, 결제 방식 등은 사이트에 적힌 그대로와 다를 수 있으므로 방문 직전에 한 번 더 확인하는 습관이 필요하다. 한편 다양한 지역 가게 정보를 비교해 보고 싶다면 <a href="https://mens-esthe.space">shinjuku-mens</a> 같은 외부 안내 페이지를 참고 자료로 활용할 수 있다. 다만 광고성 내용이 섞여 있을 수 있으므로 사실 여부는 별도로 검증해야 한다.</p>
+<h2>분쟁 예방을 위한 기본 체크리스트</h2>
+<p>입장 전에는 룸 내부에서 동선이 불편하지 않은지, 비상구 위치가 안내되어 있는지 살펴본다. 이용 중에는 음료 제공 범위와 추가 요금이 어떻게 발생하는지 직원에게 먼저 묻고, 퇴장 시에는 결제 내역을 영수증으로 받아 보관한다. 기록을 남겨두면 다음 방문 때 기준점을 잡는 데 도움이 된다. 더 일반적인 분쟁 대응 절차는 <a href="https://support.google.com/">공식 가이드 커뮤니티</a>에서 안내 원칙을 확인할 수 있다.</p>
+<h2>정리하면</h2>
+<p>상수역 가라오케는 목적과 시간대, 인원 구성에 따라 선택 기준이 달라진다. 확인되지 않은 가격이나 전화번호에 의존하기보다 운영 정보를 직접 확인하고, 외부 자료는 보조 수단으로 활용하되 사실 검증은 별도로 하는 것이 안전하다. 이러한 기본 절차를 지켜 첫 방문에서도 실망할 확률을 줄일 수 있다.</p>
+</article>
+    <nav class="post-pager" aria-label="글 이동">
       <a class="post-pager__prev" href="../posts/normal-2.html">← 상수 가라오케 찐후기</a>
       <a class="post-pager__index" href="../posts.html">글 목록</a>
     </nav>
